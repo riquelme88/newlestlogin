@@ -10,6 +10,8 @@ function verifyEmail(){
         if(regex.test(inputValue)){
             document.querySelector('.login-layout').style.display = 'none'
             document.querySelector('.subscribing').style.display = 'block'
+            document.querySelector('.subscribing p ').innerHTML = `<p id="text-subscribing">A confirmation email has been sent to <strong>${inputValue}.</strong> Please
+            open it and click the button inside to confirm your subscription.</p>`
         }else{
             input.style.border = '1px solid red'
             input.style.color = 'hsl(4, 100%, 67%)'
