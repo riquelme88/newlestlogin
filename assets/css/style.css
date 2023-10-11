@@ -1,0 +1,380 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:  hsl(235, 18%, 26%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-layout{
+    width: 55vw;
+    margin-top: 100px;
+    height: 70vh;
+    background-color: white;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    padding: 12px 20px;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0px 0px 20px #222;
+    
+}
+
+.infos{
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    max-width: 90%;
+}
+
+.infos h1{
+    font-size: 52px;
+    margin-top: 8%;
+    color: hsl(234, 29%, 20%);
+    letter-spacing: 1px;
+}
+
+.infos .info-join{
+    font-size: 15px;
+    margin-top: 2%;
+    color: hsl(234, 29%, 20%);
+}
+
+.rights-stamps{
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.stamps{
+    display: flex;
+    margin-top: 1%;
+    color: hsl(234, 29%, 20%);
+    font-size: 15px;
+}
+.stamps img{
+    margin-right: 10px;
+}
+
+label{
+    display: flex;
+    flex-direction: column;
+    margin-top: 7%;
+    font-size: 11px;
+    color: hsl(234, 29%, 20%);
+    font-weight: 700;
+}
+
+label input{
+    margin-top: 5px;
+    width: 95%;
+    padding: 15px;
+    margin-bottom: 5%;
+    border-radius: 10px;
+    border: 1px solid hsl(231, 7%, 60%);
+    outline: 0;
+}
+
+label input:focus{
+    border: 1px solid black;
+}
+
+#warning{
+    position: absolute;
+    margin-left: 17%;
+    color: hsl(4, 100%, 67%);
+}
+
+button{
+    width: 95%;
+    padding: 14px;
+    border-radius: 7px;
+    border: 0px;
+    background-color: hsl(234, 29%, 20%);
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+button:hover{
+    background-color: hsl(4, 100%, 67%);
+    box-shadow: 0px 5px 20px hsl(4, 100%, 67%);
+}
+
+.back-image{
+    background: url(/assets/images/illustration-sign-up-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+}
+
+.subscribing{
+    margin-top: 130px;
+    width: 28vw;
+    height: 58vh;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 20px #222;
+    padding: 35px 40px;
+    display: none;
+}
+
+#thanks{
+    font-size: 40px;
+    margin-top: 4%;
+    color: hsl(234, 29%, 20%);
+    font-weight: 700;
+}
+
+#text-subscribing{
+    font-size: 14px;
+    margin-top: 10px;
+    color: hsl(234, 29%, 20%);
+}
+
+.subscribing button{
+    margin-top: 25px;
+}
+
+footer{
+    margin-top: 30px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+footer a{
+    color: hsl(4, 100%, 67%);
+
+}
+@media screen and (min-width: 1920px) {
+    .infos h1{
+        font-size: 70px;
+    }
+    .infos .info-join{
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    .rights-stamps{
+        margin-top: 30px;
+    }
+    .stamps{
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    #thanks{
+        font-size: 70px;
+    }
+    #text-subscribing{
+        font-size: 18px;
+        max-width: 85%;
+    }
+
+    .subscribing button{
+        margin-top: 55px;
+    }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1919px){
+    .infos .info-join{
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    .stamps{
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    #thanks{
+        font-size: 45px;
+    }
+    #text-subscribing{
+        font-size: 15px;
+        max-width: 100%;
+    }
+
+    .subscribing button{
+        margin-top: 40px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px){
+    .infos h1{
+        font-size: 40px;
+    }
+    .infos .info-join{
+        font-size: 13px;
+        margin-top: 10px;
+    }
+    .rights-stamps{
+        margin-top: 10px;
+    }
+    .stamps{
+        font-size: 11px;
+    }
+
+    label input{
+        padding: 10px;
+    }
+    #thanks{
+        font-size: 30px;
+    }
+    #text-subscribing{
+        font-size: 11px;
+        max-width: 100%;
+    }
+
+    .subscribing button{
+        margin-top: 20px;
+    }
+
+    #warning{
+        margin-left: 13%;
+    }
+
+    footer{
+        color: white;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .login-layout{
+        width: 80vw;
+        margin-top: 30px;
+        height: 90vh;
+    }
+
+    .subscribing{
+        margin-top: 80px;
+        width: 48vw;
+        height: 70vh;
+        border-radius: 20px;
+        background-color: white;
+        box-shadow: 0px 0px 20px #222;
+        padding: 35px 40px;
+        transition: all ease 0.5s;
+    }
+    #warning{
+        margin-left: 22%;
+    }
+}
+
+@media screen and (max-width: 475px){
+    .login-layout{
+        width: 75vw;
+        margin-top: 0px;
+        height: 100vh;
+        border-radius: 0px;
+        grid-template-columns: 100%;
+        grid-template-rows: 35% 65%;
+        padding: 0px;
+        font-family: 'Roboto', sans-serif;
+        /*transition: all ease 0.5s;*/
+        grid-row: 2/3;
+    }
+
+    .back-image{
+        background: url(/assets/images/illustration-sign-up-mobile.svg);
+        background-size: cover;
+        background-position: center;
+        border-radius: 0px;
+        grid-row: 1/2;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+
+    .infos{
+        display: flex;
+        flex-direction: column;
+        padding-left: 5%;
+        max-width: 100%;
+        padding: 15px 20px;
+    }
+
+    .infos h1{
+        font-size: 30px;
+        margin-top: 1%;
+        letter-spacing: 0px;
+    }
+
+    .infos .info-join{
+        font-size: 12px;
+        margin-top: 3%;
+        color: hsl(234, 29%, 20%);
+    }
+
+    .rights-stamps{
+        margin-top: 1%;
+    }
+
+    .stamps{
+        margin-top: 6%;
+        color: hsl(234, 29%, 20%);
+        font-size: 12px;
+    }
+    .stamps img{
+        width: 18px;
+    }
+    label{
+        margin-top: 15px;
+    }
+
+    label input{
+        margin-top: 5px;
+        width: 95%;
+        padding: 10px;
+        margin-bottom: 5%;
+    }
+
+    button{
+        padding: 10px;
+    }
+
+    .subscribing{
+        margin-top: 5px;
+        width: 90vw;
+        height: 98vh;
+        border-radius: 20px;
+        background-color: white;
+        box-shadow: 0px 0px 20px #222;
+        padding: 0px;
+        padding-top: 80px;
+        padding-left: 15px;
+        padding-right: 15px;
+        transition: all ease 0.5s;
+    }
+
+    #thanks{
+        font-size: 35px;
+        margin-top: 8%;
+    }
+    #text-subscribing{
+        font-size: 13px;
+        margin-top: 10px;
+        margin-bottom: 100px;
+    }
+    .subscribing button{
+        margin-top: 30px;
+        padding: 15px;
+    }
+    #warning{
+        margin-left: 33%;
+    }
+
+
+}
+
+@media screen and (max-width: 320px){
+    button{
+        font-size: 11px;
+        padding: 10px;
+    }
+}
+
+
+
+
+
